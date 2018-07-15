@@ -5,10 +5,10 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
   get '/recipes' do
-    "Hello World"
-    # @recipe = Recipe.all
-    #
-    # erb :index
+
+    #@recipe = Recipe.all
+
+    erb :index
   end
 
   get '/recipes/:id' do
